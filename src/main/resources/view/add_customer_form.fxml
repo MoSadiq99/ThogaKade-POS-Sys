@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.AddCustomerFormController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="400.0" prefWidth="606.0">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="51.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/buyer_8942052.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="114.0" layoutY="12.0" prefHeight="56.0" prefWidth="254.0" text="Add Customer">
+               <font>
+                  <Font name="Segoe UI Semibold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="186.0" fitWidth="300.0" layoutX="51.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/female-client-visitor-talking-with-receptionist-desk-speech-bubble-laptop-flat-vector-illustration-service-communication.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtName" layoutX="363.0" layoutY="110.0" prefHeight="30.0" prefWidth="201.0" promptText="Name" text="Sample" unFocusColor="#7e7e7e">
+               <font>
+                  <Font name="Segoe UI Symbol" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAge" layoutX="363.0" layoutY="158.0" prefHeight="30.0" prefWidth="201.0" promptText="Age" text="22" unFocusColor="#7e7e7e">
+               <font>
+                  <Font name="Segoe UI Symbol" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtContact" layoutX="363.0" layoutY="208.0" prefHeight="30.0" prefWidth="201.0" promptText="Contact" text="0777111222" unFocusColor="#7e7e7e">
+               <font>
+                  <Font name="Segoe UI Symbol" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" layoutX="363.0" layoutY="258.0" prefHeight="30.0" prefWidth="201.0" promptText="Address" text="Kurunegala" unFocusColor="#7e7e7e">
+               <font>
+                  <Font name="Segoe UI Symbol" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="105.0" layoutY="317.0" onAction="#OnClickBtnCancel" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #e84118;" text="Cancel">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.5708847641944885" blue="0.40123456716537476" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="1.0" green="0.9333333373069763" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5877193212509155" green="0.22311565279960632" blue="0.22311565279960632" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill></JFXButton>
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="405.0" layoutY="317.0" onAction="#OnClickBtnSave" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #44bd32;" text="Save">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8745098114013672" green="0.95686274766922" blue="0.1411764770746231" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.062745101749897" green="0.7803921699523926" blue="0.125490203499794" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill></JFXButton>
+            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="255.0" layoutY="317.0" onAction="#OnClickBtnClear" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #0097e6;" text="Clear">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.05882352963089943" green="0.9843137264251709" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.07058823853731155" green="0.30980393290519714" blue="0.7686274647712708" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill></JFXButton>
+            <Label layoutX="363.0" layoutY="68.0" prefHeight="30.0" prefWidth="27.0" text="ID:">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="textID" layoutX="398.0" layoutY="71.0" prefHeight="25.0" prefWidth="166.0" />
+
+         </children>
+
+      </Pane>
+   </children>
+</AnchorPane>

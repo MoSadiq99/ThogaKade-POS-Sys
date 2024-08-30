@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.ViewCustomersFormController">
+   <Label layoutX="155.0" prefHeight="63.0" prefWidth="387.0" text="Thoga Kade Customer List">
+      <font>
+         <Font name="Segoe UI Semibold" size="30.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="36.0" fitWidth="68.0" layoutX="103.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../images/buyer_8942052.png" />
+   </ImageView>
+   <TableView fx:id="tblCustomers" layoutY="77.0" prefHeight="265.0" prefWidth="602.0" styleClass="dashboard-colour2" stylesheets="@../css/Table.css">
+      <columns>
+         <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+         <TableColumn fx:id="colName" prefWidth="141.60003662109375" text="Name" />
+         <TableColumn fx:id="colAge" prefWidth="72.80000305175781" text="Age" />
+         <TableColumn fx:id="colContact" prefWidth="148.800048828125" text="Contact" />
+         <TableColumn fx:id="colAddress" prefWidth="160.79996337890623" text="Address" />
+      </columns>
+   </TableView>
+   <JFXButton fx:id="btnReloadList" buttonType="RAISED" layoutX="433.0" layoutY="352.0" onAction="#btnReloadOnAction" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #0097e6;" text="Reload List">
+      <ripplerFill>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.05882352963089943" green="0.9843137264251709" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.07058823853731155" green="0.30980393290519714" blue="0.7686274647712708" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </ripplerFill>
+   </JFXButton>
+   <JFXButton fx:id="btnGoBack" buttonType="RAISED" layoutX="272.0" layoutY="353.0" onAction="#OnClickBtnGoBack" prefHeight="34.0" prefWidth="136.0" style="-fx-background-color: #e84118;" text="Go Back">
+      <ripplerFill>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.5708847641944885" blue="0.40123456716537476" />
+                  </color>
+               </Stop>
+               <Stop offset="0.006711409395973154">
+                  <color>
+                     <Color red="1.0" green="0.9333333373069763" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.5877193212509155" green="0.22311565279960632" blue="0.22311565279960632" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </ripplerFill>
+   </JFXButton>
+</AnchorPane>
